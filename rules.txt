@@ -1,0 +1,39 @@
+-----------------------Snake Game Rules and Instructions--------------------
+
+1. Objective:
+    a. Control the snake to eat food and increase your score.
+    b. Avoid collisions with the walls or yourself to stay in the game.
+
+2. Controls:
+    a. Move Left: Press a
+    b. Move Right: Press d
+    c. Move Up: Press w
+    d. Move Down: Press s
+    e. Quit Game: Press q (immediately stops the game)
+
+3. Gameplay:
+    a. The snake starts at the center of the game board.
+    b. The snake moves continuously in the direction you last pressed.
+    c. The goal is to eat the food (denoted by F on the screen). Each time the snake eats food:
+    d. The score increases by 1.
+    e. The snake's length increases by one segment.
+    f. A new piece of food appears at a random location.
+
+4. Collision and Lives:
+    a. Wall Collisions:
+    The game board is wrapped around. If the snake moves beyond one edge, it appears on
+    the opposite edge. However, each collision with the wall decreases the number of 
+    lives.
+
+    b. Self-Collisions:
+    If the snake runs into itself, it loses a life. The game will reset the snake's 
+    position and state but will immediately exit if the number of lives reaches zero.
+
+    c. Game Over:
+    The game ends if the number of lives reaches zero due to wall collisions or self-collisions.
+    When the game ends, the final score is displayed, and the game exits.
+
+5. Visuals:
+    a. The snake is represented by O for the head and o for the body segments.
+    b. The food is represented by F.
+    c. The boundaries of the game board are marked with #
